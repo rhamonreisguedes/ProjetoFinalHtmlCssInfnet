@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookflix</title>
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/index/icon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top" id="black">
+            <div class="container-fluid">
+                <a href="#"><img src="assets/images/index/logo.png" id="logo" alt="Logo Bookflix"></a>
+                <button class="navbar-toggler text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-2 link-light">Início</a></li>
+                        <li><a href="#minhaBiblioteca" class="nav-link px-2 link-light">Minha Biblioteca</a></li>
+                        <li><a href="#literatura" class="nav-link px-2 link-light">Literatura</a></li>
+                        <li><a href="#motivacional" class="nav-link px-2 link-light">Motivacional</a></li>
+                        <li><a href="#bestSellers" class="nav-link px-2 link-light">Best-Sellers</a></li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 bg-dark text-secondary border-secondary shadow-none" type="search" placeholder="Pesquisar Título..." aria-label="Search">
+                    </form>
+                </div>
+                <div class="dropdown text-end">
+                    <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/images/index/profile.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end text-small dropdown-menu-dark">
+                        <li><a class="dropdown-item link-light" href="#"><i class="fa-solid fa-book-open"></i> Meus Livros</a></li>
+                        <li><a class="dropdown-item link-light" href="#"><i class="fa-solid fa-gear"></i> Configurações</a></li>
+                        <li><a class="dropdown-item link-light" href="#"><i class="fa-solid fa-user"></i> Perfil</a></li>
+                        <li><hr class="dropdown-divider bg-light"></li>
+                        <li><a class="dropdown-item link-light" href="#"><i class="fa-solid fa-person-walking-arrow-right"></i> Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="fonte" id="banner">
+        <span class="position-absolute col-lg-6 col-md-7 col-7 text-light fs-1 text-center pt-5 mt-md-5">
+            <p class="fw-bold mt-xl-5 telaGrande">Grandes Livros</p>
+            <p class="fw-bold telaGrande">para Grandes Leitores</p>
+            <button type="button" id="btnNovidades" class="btn btn-outline mt-lg-3 p-md-2">Confira as novidades do mês</button>
+        </span>
+        <img src="assets/images/index/banner.jpg" class="img-fluid" id="bannerImage" alt="Banner Bookflix">
+    </div>
+    <section id="minhaBiblioteca" class="bg-dark">
+        <h2 class="text-light py-3 ps-5 fonte fw-bold">Minha Biblioteca</h2>
+        <div id="minhabib" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row ps-5 pb-3">
+                        <div class="col-3">
+                            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/ficcao/fic2.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/bestSellers/bs11.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/bestSellers/bs6.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/motivacional/mot8.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                        </div>
+                    </div>
+                </div>
+              <div class="carousel-item">
+                <div class="row ps-5 pb-3">
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/bestSellers/bs12.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/ficcao/fic3.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/motivacional/mot2.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/ficcao/fic6.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#minhabib" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#minhabib" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <section id="literatura" class="bg-dark">
+        <h2 class="text-light py-3 ps-5 fonte fw-bold">Literatura</h2>
+        <div id="lit" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row ps-5 pb-3">
+                        <div class="col-3">
+                            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/ficcao/fic1.jpg" class="capa img-fluid'" alt="capa de livro"></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/ficcao/fic2.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/ficcao/fic3.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/ficcao/fic4.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                        </div>
+                    </div>
+                </div>
+              <div class="carousel-item">
+                <div class="row ps-5 pb-3">
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/ficcao/fic5.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/ficcao/fic6.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/ficcao/fic7.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/ficcao/fic8.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row ps-5 pb-3">
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/ficcao/fic9.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/ficcao/fic10.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/ficcao/fic11.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/ficcao/fic12.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#lit" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#lit" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <section id="motivacional" class="bg-dark">
+        <h2 class="text-light py-3 ps-5 fonte fw-bold">Motivacional</h2>
+        <div id="motiv" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row ps-5 pb-3">
+                        <div class="col-3">
+                            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/motivacional/mot1.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/motivacional/mot2.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/motivacional/mot3.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/motivacional/mot4.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                        </div>
+                    </div>
+                </div>
+              <div class="carousel-item">
+                <div class="row ps-5 pb-3">
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/motivacional/mot5.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/motivacional/mot6.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/motivacional/mot7.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/motivacional/mot8.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row ps-5 pb-3">
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/motivacional/mot9.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/motivacional/mot10.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/motivacional/mot11.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/motivacional/mot12.jpg" class="capa img-fluid" alt="capa de livro"></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#motiv" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#motiv" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <section id="bestSellers" class="bg-dark">
+        <h2 class="text-light py-3 ps-5 fonte fw-bold">Best-Sellers</h2>
+        <div id="bs" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row ps-5 pb-3">
+                        <div class="col-3">
+                            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/bestSellers/bs1.jpg" class="capa img-fluid" alt="capa do livro"></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/bestSellers/bs2.jpg" class="capa img-fluid" alt="capa do livro"></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/bestSellers/bs3.jpg" class="capa img-fluid" alt="capa do livro"></a>
+                        </div>
+                        <div class="col-3">
+                            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/bestSellers/bs4.jpg" class="capa img-fluid" alt="capa do livro"></a>
+                        </div>
+                    </div>
+                </div>
+              <div class="carousel-item">
+                <div class="row ps-5 pb-3">
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/bestSellers/bs5.jpg" class="capa img-fluid" alt="capa do livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/bestSellers/bs6.jpg" class="capa img-fluid" alt="capa do livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/bestSellers/bs7.jpg" class="capa img-fluid" alt="capa do livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/bestSellers/bs8.jpg" class="capa img-fluid" alt="capa do livro"></a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row ps-5 pb-3">
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/bestSellers/bs9.jpg" class="capa img-fluid" alt="capa do livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/bestSellers/bs10.jpg" class="capa img-fluid" alt="capa do livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/bestSellers/bs11.jpg" class="capa img-fluid" alt="capa do livro"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./assets/images/bestSellers/bs12.jpg" class="capa img-fluid" alt="capa do livro"></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bs" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bs" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <footer class="d-flex bg-dark text-light flex-wrap justify-content-between align-items-center py-3">
+            <div class="col-md-4 col-3 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-muted ms-5">Bookflix© 2022</span>
+            </div>
+            <ul class="nav col-md-4 col-7 justify-content-end list-unstyled d-flex me-md-5">
+                <li class="me-3"><a class="text-muted" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="me-3"><a class="text-muted" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="me-3"><a class="text-muted" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="me-3"><a class="text-muted" href="https://tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+              </ul>
+            </footer>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                    <h5 class="modal-title text-danger fw-bold fs-1" id="exampleModalLabel">Título do Livro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-light">
+                        <img src="assets/images/modal/livroAberto.jpg" class="img-fluid w-5" alt="livroAberto">
+                        <p class="mt-2 pt-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum perferendis quis molestiae repudiandae dicta, doloribus vero, distinctio est ea ut porro aliquam vitae recusandae rerum, reprehenderit non repellat culpa. Nesciunt!</p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar para o Menu Principal</button>
+                    <button type="button" class="btn btn-danger">Começar a Ler</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
